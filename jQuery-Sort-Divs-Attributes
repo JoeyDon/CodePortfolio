@@ -1,0 +1,14 @@
+<div class="testWrapper">
+    <div class="test" data-percentage="30"></div>
+    <div class="test" data-percentage="62"></div>
+    <div class="test" data-percentage="11"></div>
+    <div class="test" data-percentage="43"></div>
+</div>
+
+
+var $wrapper = $('.testWrapper');
+
+$wrapper.find('.test').sort(function (a, b) {
+    return +a.getAttribute('data-percentage') - +b.getAttribute('data-percentage');
+})
+.appendTo( $wrapper );
