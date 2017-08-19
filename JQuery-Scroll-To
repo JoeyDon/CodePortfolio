@@ -1,0 +1,5 @@
+$("#nav2").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#me").offset().top
+        }, 500);
+    });
